@@ -23,17 +23,17 @@ public class Task {
     private Long id;
 
     @NotNull
-    @Size(max = 100)
+    @Size(max = 100, message = "Título deve ter no máximo 100 caracteres")
     private String titulo;
 
-    @Size(max = 500)
+    @Size(max = 500, message = "Descrição não pode exceder 500 caracteres")
     private String descricao;
 
-    @NotNull
+    @NotNull(message = "Status é obrigatório")
     @Enumerated(EnumType.STRING)
     private TaskStatus status;
 
-    @Size(max = 100)
+    @Size(max = 100, message = "Responsável não pode exceder 100 caracteres")
     private String responsavel;
 
     @Column(updatable = false)
