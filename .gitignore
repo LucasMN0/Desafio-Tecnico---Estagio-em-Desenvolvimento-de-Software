@@ -1,0 +1,53 @@
+# Maven
+target/
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+pom.xml.tag
+pom.xml.releaseBackup
+release.properties
+dependency-reduced-pom.xml
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+*.swp
+*.swo
+*~
+.classpath
+.project
+.settings/
+
+# Gradle
+.gradle/
+build/
+gradle/
+
+# Spring Boot
+.mvn/
+mvnw
+mvnw.cmd
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Database
+*.db
+*.h2.db
+
+# Runtime data
+.env
+.env.local
+.env.*.local
+
+# Misc
+*.orig
+.DS_Store
