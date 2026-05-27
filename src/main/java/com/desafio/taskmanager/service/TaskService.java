@@ -87,8 +87,9 @@ public class TaskService {
     private void calcularStatusAtrasado(Task task) {
         if (task.getDataLimite() != null){
             LocalDate hoje = LocalDate.now();
-            if(task.getDataLimite().isBefore(hoje) && task.getStatus() != TaskStatus.CONCLUIDO){
+            if(task.getDataLimite().isBefore(hoje) && task.getStatus() != TaskStatus.CONCLUIDO && task.getStatus() != TaskStatus.ATRASADO){
                 task.setStatus(TaskStatus.ATRASADO);
+                taskRepository.save(task);
             }
         }
     }
