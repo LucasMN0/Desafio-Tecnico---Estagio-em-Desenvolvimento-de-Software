@@ -177,17 +177,20 @@ O status ATRASADO depende da data de hoje, que muda constantemente. Calculá-lo 
 Durante o desenvolvimento, utilizei Claude (Anthropic) e Claude Code para:
 
 ### Aceleração de Setup:
+
 - Configuração inicial do Spring Boot e dependências
 - Configuração do Swagger/OpenAPI
 - Geração de boilerplate (estrutura de pastas, configurações)
 - Docker e docker-compose
 
 ### Trabalho em Conjunto (IA auxiliando, eu decidindo e revisando):
+
 - Modelagem da entidade Task e DTOs
 - Implementação do Controller e endpoints
 - Exception handlers e validações
 
 ### Implementado por mim:
+
 - Lógica de negócio do Service layer
 - Cálculo automático do status ATRASADO
 - Testes automatizados (cenários definidos e implementados por mim)
@@ -196,6 +199,7 @@ Durante o desenvolvimento, utilizei Claude (Anthropic) e Claude Code para:
 - Refatoração do método de busca por ID (DRY principle)
 
 ### O que NÃO foi feito por IA:
+
 - Decisões arquiteturais
 - Definição dos endpoints e contratos
 - Lógica de negócio crítica
@@ -204,3 +208,7 @@ Durante o desenvolvimento, utilizei Claude (Anthropic) e Claude Code para:
 - Identificação e correção de bugs
 
 > A IA foi uma ferramenta de produtividade. Todo código foi revisado, compreendido e adaptado conforme necessário.
+
+## Vídeo Demonstração
+
+Acesse: `https://youtu.be/Y8ZXYDbLTLk` 
