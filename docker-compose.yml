@@ -1,0 +1,21 @@
+services:
+  task-manager:
+    # Build a partir do Dockerfile local
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    # Nome do container
+    container_name: task-manager-app
+
+    # Mapear a porta 8080 do container para a porta 8080 da máquina host
+    ports:
+      - "8080:8080"
+
+    # Variáveis de ambiente
+    environment:
+      # Perfil Spring Boot para usar configurações de produção
+      SPRING_PROFILES_ACTIVE: prod
+
+    # Reiniciar automaticamente em caso de falha
+    restart: unless-stopped
